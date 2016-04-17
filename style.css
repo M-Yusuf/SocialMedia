@@ -37,7 +37,8 @@ p{
  {
  	background-color : #C0CFBC;
  	border: solid black 1px;
- 	border-radius: 5px;
+ 	border-radius: 10px;
+ 	padding-left: 10px;
  	
  	}
  body 
