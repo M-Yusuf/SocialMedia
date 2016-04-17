@@ -31,7 +31,7 @@ $(document).ready(function () {
 <div class="form-group">
 <label for="your_message">Your Message:<input type="text" id='your_message' placeholder='Type your message here'> </label>
 </div>
-<p> <input id='submit' class="btn btn-default" type="submit" value= "Submit Your Message"> </p>
+<p> <input id='submit' class="btn btn-success" type="submit" value= "Submit Your Message"> </p>
 </form>
 </div>
 <div class="col-md-6">
@@ -61,12 +61,23 @@ forum.on("child_added", function (snapshot) {
         start=messages.length-count
     }
     for(var i=start;i <messages.length;i++){
-            $("#content").prepend("<p>"+messages[i].name+": "+messages[i].message+"</p>")
+            $("#content").prepend("<p class = "css"><strong>"+messages[i].name+"</strong>: "+messages[i].message+"</p>")
+
         }
+        
+
+
+
     //$("#content").prepend("<p>"+value.name+": "+value.message+"</p>")
 })
 
 
+.css {
+
+    color : expression("rgb(" + Math.floor(Math.random() * 255)
+      + "," + Math.floor(Math.random() * 255) + ","
+      + Math.floor(Math.random() * 255) + ")");
+}
 
 </script>
 </html>
