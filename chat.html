@@ -63,7 +63,7 @@ forum.on("child_added", function (snapshot) {
     for(var i=start;i <messages.length;i++){
             $("#content").prepend("<p>"+messages[i].name+": "+messages[i].message+"</p>")
         }
-    //$("#content").prepend("<p>"+value.name+": "+value.message+"</p>")
+    $("#content").prepend("<p>"+value.name+": "+value.message+"</p>")
 })
 
 
