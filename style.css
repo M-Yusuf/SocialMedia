@@ -1,5 +1,6 @@
 p{
-	color: red;
+	color: black;
+	font-family: Comic;
 }
 .javla{
 
@@ -33,3 +34,5 @@ p{
  	border-radius: 5px;
  	width: messages.length;
  	}
+
+ 	.
