@@ -12,10 +12,10 @@
 
 
 $(document).ready(function () {
-			  $(".navbar-toggle").on("click", function () {
-				    $(this).toggleClass("active");
-			  });
-		});
+              $(".navbar-toggle").on("click", function () {
+                    $(this).toggleClass("active");
+              });
+        });
     </script>
 
 <body>
@@ -41,7 +41,7 @@ $(document).ready(function () {
 <script>
 
 
-var forum=new Firebase ("https://defhacksgame.firebaseio.com"); 
+var forum=new Firebase ("http://burning-heat-8055.firebaseio.com/"); 
 document.getElementById("submit").onclick=function(){
     var username=$("#username").val();
     var message=$("#your_message").val();
@@ -65,8 +65,6 @@ forum.on("child_added", function (snapshot) {
         }
     //$("#content").prepend("<p>"+value.name+": "+value.message+"</p>")
 })
-
-
 
 
 
