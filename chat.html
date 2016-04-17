@@ -61,7 +61,7 @@ forum.on("child_added", function (snapshot) {
         start=messages.length-count
     }
     for(var i=start;i <messages.length;i++){
-            $("#content").prepend("<p class = "css"><strong>"+messages[i].name+"</strong>: "+messages[i].message+"</p>")
+            $("#content").prepend("<p><strong>"+messages[i].name+"</strong>: "+messages[i].message+"</p>")
 
         }
         
@@ -72,12 +72,7 @@ forum.on("child_added", function (snapshot) {
 })
 
 
-.css {
 
-    color : expression("rgb(" + Math.floor(Math.random() * 255)
-      + "," + Math.floor(Math.random() * 255) + ","
-      + Math.floor(Math.random() * 255) + ")");
-}
 
 </script>
 </html>
