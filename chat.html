@@ -45,11 +45,11 @@ var forum=new Firebase ("http://burning-heat-8055.firebaseio.com/");
 document.getElementById("submit").onclick=function(){
     var username=$("#username").val();
     var message=$("#your_message").val();
-    console.log('LOL');
     forum.push({name:username,message:message});
     $("#your_message").val("");
     return false;
 };
+
 var messages=[]
 forum.on("child_added", function (snapshot) {
     var value=snapshot.val()
