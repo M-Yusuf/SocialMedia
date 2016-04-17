@@ -74,7 +74,7 @@ forum.on("child_added", function (snapshot) {
         start=messages.length-count
     }
     for(var i=start;i <messages.length;i++){
-            $("#content").prepend("<p>" + "<p class=\"time\">" + messages[i].time+"</p>" + "# "+ "<strong>"+messages[i].name+"</strong>: "+messages[i].message+ "</p>")
+            $("#content").prepend("<p>" + "<p class=\"time\">" + messages[i].time+"</p>" + "User "+ "<strong>"+messages[i].name+"</strong>: "+"<p class = \"messages\">"+messages[i].message+"</p>" + "</p>")
 
         }
 

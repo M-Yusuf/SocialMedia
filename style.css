@@ -23,4 +23,13 @@ p{
  }
  .time{
  	font-size: 10px;
+ 	color : green;
  }
+ .messages
+ {
+ 	background-color : #C0CFBC
+;
+ 	border: solid black 1px;
+ 	border-radius: 5px;
+ 	width: messages.length;
+ 	}
