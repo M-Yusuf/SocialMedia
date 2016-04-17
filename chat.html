@@ -31,6 +31,12 @@ $(document).ready(function () {
 <div class="form-group">
 <label for="your_message">Your Message:<input type="text" id='your_message' placeholder='Type your message here'> </label>
 </div>
+
+
+
+
+
+
 <p> <input id='submit' class="btn btn-success" type="submit" value= "Submit Your Message"> </p>
 </form>
 </div>
@@ -45,6 +51,7 @@ var forum=new Firebase ("http://burning-heat-8055.firebaseio.com/");
 document.getElementById("submit").onclick=function(){
     var username=$("#username").val();
     var message=$("#your_message").val();
+    
     console.log('LOL');
     forum.push({name:username,message:message});
     $("#your_message").val("");
